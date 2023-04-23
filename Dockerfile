@@ -6,5 +6,6 @@ RUN     unzip cryptop.zip
 RUN     rm -rf cryptop.zip
 RUN     mv cryptop-html/* .
 RUN     rm -rf cryptop-html
+RUN     touch new.txt
 EXPOSE  80
 CMD     ["/usr/sbin/httpd","-DFOREGROUND"]
